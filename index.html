@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Портфолио Улискина Даниила Евгеньевича, группа ФИТ-241">
+  <title>Даниил Улискин | Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="#home"><span>DU</span><small>/ portfolio</small></a>
+    <input class="menu-toggle" type="checkbox" id="menu-toggle">
+    <label class="burger" for="menu-toggle" aria-label="Открыть меню"><span></span><span></span><span></span></label>
+    <nav class="menu">
+      <a href="#about">Обо мне</a><a href="#skills">Навыки</a><a href="#portfolio">Проекты</a><a href="#contacts">Контакты</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <p class="kicker">ФИТ-241 / STUDENT / WEB</p>
+      <h1>Даниил<br><em>Улискин</em></h1>
+      <p class="intro">Студент, начинающий разработчик и волонтёр. Собираю учебные проекты, изучаю технологии и постепенно превращаю идеи в работающие интерфейсы.</p>
+      <div class="hero-buttons"><a class="button light" href="#portfolio">Мои проекты <b>↗</b></a><a class="button outline" href="#about">Обо мне</a></div>
+      <div class="hero-note"><span>01</span><p>Веб-разработка<br><strong>HTML · CSS · Python</strong></p></div>
+    </div>
+    <div class="hero-side">
+      <div class="portrait-frame"><div class="portrait-placeholder">DU</div><span>01 / PROFILE</span></div>
+      <div class="side-caption">ULISKIN<br>DANIIL E.</div>
+    </div>
+  </div>
+</section>
+
+<section class="section about" id="about">
+  <div class="container">
+    <div class="section-top"><span>01</span><p>ABOUT ME</p><div></div></div>
+    <div class="about-grid">
+      <h2>Не только<br><em>код.</em></h2>
+      <div class="about-text"><p class="large">Я Улискин Даниил Евгеньевич, студент группы ФИТ-241. Мне нравится создавать понятные цифровые продукты и разбираться в том, как они работают.</p><p>Помимо учёбы, я участвую в волонтёрских мероприятиях. Это помогает мне работать в команде, общаться с разными людьми и брать ответственность за общий результат.</p><p>Сейчас развиваюсь в веб-разработке, изучаю HTML, CSS и Python, а также продолжаю собирать собственное портфолио из учебных и личных проектов.</p></div>
+    </div>
+    <div class="about-cards">
+      <article><span>STUDENT</span><strong>ФИТ-241</strong><p>Информационные технологии</p></article>
+      <article><span>VOLUNTEER</span><strong>Волонтёр</strong><p>Участие в мероприятиях и командной работе</p></article>
+      <article><span>INTEREST</span><strong>Web / IT</strong><p>Интерфейсы, программирование и новые технологии</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section skills" id="skills">
+  <div class="container">
+    <div class="section-top"><span>02</span><p>SKILLS</p><div></div></div>
+    <div class="skills-head"><h2>Что я<br><em>знаю</em></h2><p>Технологии, которые сейчас изучаю и использую в учебных проектах.</p></div>
+    <div class="skill-list">
+      <article><div class="num">01</div><h3>Python</h3><p>Основы программирования и работа с данными</p><strong>90%</strong></article>
+      <article><div class="num">02</div><h3>Git</h3><p>Репозитории, коммиты и командная работа</p><strong>75%</strong></article>
+      <article><div class="num">03</div><h3>CSS</h3><p>Адаптивная вёрстка, Grid, Flexbox</p><strong>70%</strong></article>
+      <article><div class="num">04</div><h3>HTML</h3><p>Семантическая структура страниц</p><strong>70%</strong></article>
+    </div>
+  </div>
+</section>
+
+<section class="section portfolio" id="portfolio">
+  <div class="container">
+    <div class="section-top"><span>03</span><p>PORTFOLIO</p><div></div></div>
+    <div class="portfolio-head"><h2>Избранные<br><em>проекты</em></h2><p>Здесь будут мои учебные работы и проекты, которыми я хочу поделиться.</p></div>
+    <div class="project-grid">
+      <article class="project photo-project"><div class="photo-wrap"><img src="images/volunteering.png" alt="Участие в волонтёрском мероприятии"><span>PROJECT 01</span></div><div class="project-info"><div><small>VOLUNTEERING / 2026</small><h3>Моё участие в волонтёрстве</h3><p>Опыт командной работы и участия в университетских мероприятиях.</p></div><b>01</b></div></article>
+      <article class="project photo-project"><div class="photo-wrap"><img src="images/project.png" alt="Учебный проект"><span>PROJECT 02</span></div><div class="project-info"><div><small>WEB / 2026</small><h3>Один из учебных проектов</h3><p>Практика создания интерфейса и работы с веб-технологиями.</p></div><b>02</b></div></article>
+      <article class="project weather-project" id="weather"><div class="weather-art"><span>PROJECT 03</span><div class="sun">☼</div><strong>WEATHER</strong><small>city forecast / API</small></div><div class="project-info"><div><small>PYTHON / API</small><h3>Weather</h3><p>Проект с погодой: получение и отображение актуальных данных.</p></div><b>03</b></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="section contact-section" id="contacts">
+  <div class="container contact-box">
+    <div class="section-top"><span>04</span><p>CONTACTS</p><div></div></div>
+    <div class="contact-grid"><div><h2>Давайте<br><em>общаться.</em></h2><p>Всегда открыт для общения, новых проектов и интересных идей.</p></div><div class="contacts"><a href="mailto:uliskin06@mail.com"><small>EMAIL</small><span>uliskin06@mail.com</span>↗</a><a href="tel:+79991234567"><small>PHONE</small><span>+7 999 1234567</span>↗</a><a href="https://github.com/tr1zet" target="_blank"><small>GITHUB</small><span>github.com/tr1zet</span>↗</a><a href="https://t.me/dan.ya42" target="_blank"><small>TELEGRAM</small><span>@dan.ya42</span>↗</a></div></div>
+  </div>
+</section>
+</main>
+<footer><div class="container"><span>DU / 2026</span><p>Улискин Даниил Евгеньевич · ФИТ-241</p><a href="#home">↑ TOP</a></div></footer>
+</body>
+</html>
