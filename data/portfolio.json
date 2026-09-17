@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "category": "VOLUNTEERING / 2026",
+    "title": "Моё участие в волонтёрстве",
+    "description": "Опыт командной работы и участия в университетских мероприятиях.",
+    "image": "images/volunteering.jpg"
+  },
+  {
+    "id": 2,
+    "category": "WEB / 2026",
+    "title": "Один из учебных проектов",
+    "description": "Практика создания интерфейса и работы с веб-технологиями.",
+    "image": "images/project.jpg"
+  },
+  {
+    "id": 3,
+    "category": "PYTHON / API",
+    "title": "Weather",
+    "description": "Проект с погодой: получение и отображение актуальных данных.",
+    "weather": true
+  }
+]
