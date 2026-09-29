@@ -18,7 +18,7 @@ portfolio/
 ├─ js/
 ├─ data/
 ├─ images/
-├─ dist/              # создаётся сборкой, не коммитится
+├─ dist/              
 ├─ index.html
 ├─ package.json
 ├─ package-lock.json
