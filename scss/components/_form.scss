@@ -1,0 +1,25 @@
+@use '../utils' as *;
+
+.contact__grid { display: grid; gap: rem(35px); }
+.contact__links { display: grid; gap: rem(10px); }
+.contact__link { padding: rem(16px); border-bottom: 1px solid var(--color-border); }
+.contact__link span { display: block; color: var(--color-muted); font-size: .72rem; font-weight: 800; text-transform: uppercase; }
+.contact__form { display: grid; gap: rem(14px); padding: rem(20px); border: 1px solid var(--color-border); border-radius: $radius-lg; background: var(--color-surface); }
+.contact__field { display: grid; gap: rem(7px); }
+.contact__label { color: var(--color-muted); font-size: .75rem; font-weight: 800; text-transform: uppercase; }
+.contact__input { width: 100%; padding: rem(14px); border: 1px solid var(--color-border); border-radius: $radius-sm; outline: 0; background: var(--color-bg); color: var(--color-text); }
+.contact__input:focus { border-color: var(--color-primary); }
+.contact__error { min-height: 18px; color: var(--color-error); font-size: .75rem; }
+
+
+@media (max-width: 767px) {
+  .contact__link {
+    overflow-wrap: anywhere;
+  }
+
+  .contact__form {
+    padding: rem(16px);
+  }
+}
+
+@include respond-to(tablet) { .contact__grid { grid-template-columns: .75fr 1.25fr; } }

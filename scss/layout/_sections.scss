@@ -1,0 +1,20 @@
+@use '../utils' as *;
+
+.hero { min-height: 100vh; display: flex; align-items: center; padding-top: $header-height; }
+.hero__grid { display: grid; gap: rem(40px); align-items: end; }
+.hero__meta { display: flex; flex-wrap: wrap; gap: rem(10px); margin: rem(28px) 0; }
+.hero__tag { padding: rem(8px) rem(12px); border: 1px solid var(--color-border); border-radius: 999px; color: var(--color-muted); font-size: .75rem; font-weight: 800; text-transform: uppercase; }
+.hero__actions { display: flex; flex-wrap: wrap; gap: rem(12px); }
+.hero__side { padding: rem(20px); border-left: 3px solid var(--color-primary); color: var(--color-muted); }
+.hero__side strong { display: block; margin-bottom: rem(10px); color: var(--color-text); font-size: 1.4rem; }
+
+.about__grid { display: grid; gap: rem(35px); }
+.about__text { max-width: 700px; color: var(--color-muted); font-size: 1.05rem; }
+.about__facts { display: grid; gap: rem(12px); }
+.about__fact { padding: rem(18px); border: 1px solid var(--color-border); border-radius: $radius-md; background: var(--color-surface); }
+.about__fact strong { display: block; margin-bottom: rem(4px); color: var(--color-primary-dark); }
+
+@include respond-to(tablet) {
+  .hero__grid { grid-template-columns: 1.5fr .5fr; }
+  .about__grid { grid-template-columns: 1.4fr .6fr; align-items: start; }
+}

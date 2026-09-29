@@ -1,0 +1,44 @@
+$font-main: 'Inter', Arial, sans-serif;
+$font-display: 'Space Grotesk', 'Inter', Arial, sans-serif;
+
+$breakpoints: (
+  mobile: 480px,
+  tablet: 768px,
+  desktop: 1024px
+);
+
+$theme-light: (
+  bg: #f4f0e7,
+  surface: #fffdf7,
+  text: #171713,
+  muted: #68685f,
+  primary: #b9ff39,
+  primary-dark: #91d91f,
+  border: #d7d2c5,
+  inverse: #171713,
+  shadow: rgba(23, 23, 19, 0.12),
+  on-primary: #111111,
+  overlay: rgba(0, 0, 0, 0.62),
+  error: #d43d3d
+);
+
+$theme-dark: (
+  bg: #11120f,
+  surface: #1a1b17,
+  text: #f5f2e8,
+  muted: #a9a99f,
+  primary: #b9ff39,
+  primary-dark: #8fce20,
+  border: #35372f,
+  inverse: #f5f2e8,
+  shadow: rgba(0, 0, 0, 0.35),
+  on-primary: #111111,
+  overlay: rgba(0, 0, 0, 0.72),
+  error: #ff6b6b
+);
+
+$radius-sm: 10px;
+$radius-md: 18px;
+$radius-lg: 28px;
+$container: 1180px;
+$header-height: 78px;

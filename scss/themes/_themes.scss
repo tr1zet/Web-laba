@@ -1,0 +1,17 @@
+@use 'sass:map';
+@use '../utils' as *;
+
+:root {
+  --font-main: #{$font-main};
+  --font-display: #{$font-display};
+}
+
+@each $name, $value in $theme-light {
+  :root { --color-#{$name}: #{$value}; }
+}
+
+[data-theme='dark'] {
+  @each $name, $value in $theme-dark {
+    --color-#{$name}: #{$value};
+  }
+}
