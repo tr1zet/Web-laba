@@ -1,0 +1,12 @@
+{
+  "name": "lab3-portfolio-sass",
+  "version": "1.0.0",
+  "description": "Лабораторная работа №3: рефакторинг портфолио на Sass",
+  "scripts": {
+    "sass:dev": "sass --watch scss/main.scss:dist/css/main.css",
+    "build": "sass --no-source-map --style=compressed scss/main.scss:dist/css/main.css"
+  },
+  "devDependencies": {
+    "sass": "^1.93.2"
+  }
+}

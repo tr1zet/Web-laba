@@ -1,0 +1,58 @@
+@use '../utils' as *;
+
+.projects__head { display: flex; justify-content: space-between; align-items: end; gap: rem(20px); margin-bottom: rem(28px); }
+.projects__controls { display: flex; align-items: center; gap: rem(10px); }
+.projects__counter { min-width: 72px; text-align: center; color: var(--color-muted); font-size: .8rem; font-weight: 800; }
+.projects__arrow { width: 46px; height: 46px; border: 1px solid var(--color-border); border-radius: 50%; background: var(--color-surface); color: var(--color-text); cursor: pointer; }
+.projects__arrow:hover { border-color: var(--color-primary); background: var(--color-primary); color: var(--color-on-primary); }
+.projects__slider { overflow: hidden; touch-action: pan-y; }
+.projects__card { display: grid; grid-template-columns: 1fr; gap: rem(28px); padding: rem(18px); border: 1px solid var(--color-border); border-radius: $radius-lg; background: var(--color-surface); }
+.projects__image-wrap { min-height: 260px; display: grid; place-items: center; overflow: hidden; border-radius: $radius-md; background: var(--color-bg); }
+.projects__image { width: 100%; height: 320px; object-fit: contain; object-position: center; }
+.projects__content { padding: rem(10px); }
+.projects__category { color: var(--color-primary-dark); font-size: .72rem; font-weight: 900; letter-spacing: .12em; }
+.projects__title { margin: rem(12px) 0; font-family: var(--font-display); font-size: clamp(1.8rem, 5vw, 3.4rem); line-height: .95; letter-spacing: -.04em; }
+.projects__description { color: var(--color-muted); }
+.projects__dots { display: flex; justify-content: center; gap: 8px; margin-top: rem(18px); }
+.projects__dot { width: 8px; height: 8px; padding: 0; border: 0; border-radius: 50%; background: var(--color-border); cursor: pointer; }
+.projects__dot--active { width: 28px; border-radius: 999px; background: var(--color-primary); }
+
+
+@media (max-width: 767px) {
+  .projects__head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: rem(18px);
+  }
+
+  .projects__controls {
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .projects__card {
+    gap: rem(18px);
+    padding: rem(14px);
+  }
+
+  .projects__image-wrap {
+    min-height: 210px;
+  }
+
+  .projects__image {
+    height: 220px;
+  }
+
+  .projects__content {
+    padding: rem(4px);
+  }
+
+  .projects__title {
+    font-size: clamp(1.65rem, 9vw, 2.4rem);
+  }
+}
+
+@include respond-to(tablet) {
+  .projects__card { grid-template-columns: 1.05fr .95fr; align-items: center; padding: rem(25px); }
+  .projects__image { height: 410px; }
+}

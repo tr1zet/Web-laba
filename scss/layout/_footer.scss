@@ -1,0 +1,4 @@
+@use '../utils' as *;
+
+.footer { padding: rem(35px) 0; border-top: 1px solid var(--color-border); color: var(--color-muted); font-size: .82rem; }
+.footer__inner { display: flex; flex-wrap: wrap; justify-content: space-between; gap: rem(12px); }

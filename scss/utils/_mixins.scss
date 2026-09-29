@@ -1,0 +1,19 @@
+@use 'sass:map';
+@use 'variables' as vars;
+
+@mixin respond-to($breakpoint) {
+  @if map.has-key(vars.$breakpoints, $breakpoint) {
+    @media (min-width: map.get(vars.$breakpoints, $breakpoint)) {
+      @content;
+    }
+  } @else {
+    @error 'Неизвестный breakpoint: #{$breakpoint}. Доступны mobile, tablet, desktop.';
+  }
+}
+
+@mixin flex-center($direction: row) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: center;
+  justify-content: center;
+}

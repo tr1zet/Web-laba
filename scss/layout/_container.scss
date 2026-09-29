@@ -1,0 +1,20 @@
+@use '../utils' as *;
+
+.container { width: min(calc(100% - rem(32px)), $container); margin: 0 auto; }
+.section { padding: rem(88px) 0; }
+
+@include respond-to(tablet) {
+  .container { width: min(calc(100% - rem(64px)), $container); }
+  .section { padding: rem(110px) 0; }
+}
+
+
+@media (max-width: 767px) {
+  .container {
+    width: calc(100% - rem(32px));
+  }
+
+  .section {
+    padding: rem(72px) 0;
+  }
+}
