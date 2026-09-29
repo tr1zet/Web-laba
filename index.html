@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="ru" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Портфолио Даниила Улискина, студента группы ФИТ-241.">
+  <title>Даниил Улискин — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dist/css/main.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="header__brand" href="#home" data-scroll>
+        <span class="header__mark">DU</span>
+        <span>Даниил Улискин</span>
+      </a>
+      <nav class="header__nav" aria-label="Основная навигация">
+        <a class="header__link header__link--active" href="#about" data-scroll>Обо мне</a>
+        <a class="header__link" href="#skills" data-scroll>Навыки</a>
+        <div class="header__dropdown">
+          <button class="header__link header__dropdown-toggle" id="js-projects-menu" type="button" aria-expanded="false">Проекты⌄</button>
+          <div class="header__dropdown-menu" id="js-projects-dropdown" hidden>
+            <a class="header__dropdown-link" href="#projects" data-scroll>Все проекты</a>
+            <a class="header__dropdown-link" href="#projects" data-project-menu="0" data-scroll>Проект 01</a>
+            <a class="header__dropdown-link" href="#projects" data-project-menu="1" data-scroll>Проект 02</a>
+            <a class="header__dropdown-link" href="#projects" data-project-menu="2" data-scroll>Weather</a>
+          </div>
+        </div>
+        <a class="header__link" href="#contact" data-scroll>Контакты</a>
+      </nav>
+      <div class="header__actions">
+        <button class="header__theme" id="js-theme-toggle" type="button" aria-label="Переключить тему">☾</button>
+        <button class="header__burger" id="js-menu-toggle" type="button" aria-expanded="false" aria-controls="js-mobile-menu">
+          <span class="header__burger-line" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+    <nav class="header__mobile" id="js-mobile-menu" hidden>
+      <div class="container">
+        <a class="header__link" href="#about" data-scroll>Обо мне</a>
+        <a class="header__link" href="#skills" data-scroll>Навыки</a>
+        <div class="header__dropdown">
+          <button class="header__link header__dropdown-toggle" id="js-projects-menu" type="button" aria-expanded="false">Проекты⌄</button>
+          <div class="header__dropdown-menu" id="js-projects-dropdown" hidden>
+            <a class="header__dropdown-link" href="#projects" data-scroll>Все проекты</a>
+            <a class="header__dropdown-link" href="#projects" data-project-menu="0" data-scroll>Проект 01</a>
+            <a class="header__dropdown-link" href="#projects" data-project-menu="1" data-scroll>Проект 02</a>
+            <a class="header__dropdown-link" href="#projects" data-project-menu="2" data-scroll>Weather</a>
+          </div>
+        </div>
+        <a class="header__link" href="#contact" data-scroll>Контакты</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section hero" id="home">
+      <div class="container hero__grid">
+        <div>
+          <p class="section-label">Студент · ФИТ-241 · Web Development</p>
+          <h1 class="heading">Даниил<br><span class="heading__accent">Улискин</span></h1>
+          <div class="hero__meta">
+            <span class="hero__tag">HTML / CSS</span>
+            <span class="hero__tag">JavaScript</span>
+            <span class="hero__tag">Python</span>
+          </div>
+          <div class="hero__actions">
+            <a class="button button--primary" href="#projects" data-scroll>Смотреть проекты</a>
+            <a class="button" href="#contact" data-scroll>Связаться</a>
+          </div>
+        </div>
+        <aside class="hero__side">
+          <strong>01 — 03</strong>
+          <span>Лабораторный проект: портфолио с jQuery, AJAX, каруселью и Sass.</span>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="container">
+        <p class="section-label">01 / Обо мне</p>
+        <div class="about__grid">
+          <div>
+            <h2 class="heading">Создаю<br><span class="heading__accent">и изучаю</span></h2>
+            <p class="about__text">Я студент группы ФИТ-241, развиваюсь в веб-разработке и программировании. В учебных проектах работаю с HTML, CSS, JavaScript и Python, а также изучаю современные инструменты фронтенда.</p>
+            <p class="about__text">Отдельное место в моём опыте занимает волонтёрство: это помогает развивать командную работу, ответственность и умение доводить задачи до результата.</p>
+          </div>
+          <div class="about__facts">
+            <div class="about__fact"><strong>ФИТ-241</strong><span>Учебная группа</span></div>
+            <div class="about__fact"><strong>Web</strong><span>Основное направление</span></div>
+            <div class="about__fact"><strong>Teamwork</strong><span>Волонтёрство и командная работа</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills" id="skills">
+      <div class="container">
+        <p class="section-label">02 / Навыки</p>
+        <h2 class="heading">Мой<br><span class="heading__accent">стек</span></h2>
+        <div class="skills__layout">
+          <div class="skills__list" id="js-skills-list"></div>
+          <div class="skills__chart">
+            <div>
+              <div class="skills__ring" id="js-skill-ring">
+                <div class="skills__ring-center">
+                  <strong class="skills__value" id="js-skill-percent">90%</strong>
+                  <span class="skills__label" id="js-skill-name">PYTHON</span>
+                </div>
+              </div>
+              <p class="skills__description" id="js-skill-description">Работа с Python и учебными проектами, включая API и обработку данных.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="container">
+        <div class="projects__head">
+          <div>
+            <p class="section-label">03 / Проекты</p>
+            <h2 class="heading">Избранные<br><span class="heading__accent">проекты</span></h2>
+          </div>
+          <div class="projects__controls">
+            <button class="projects__arrow" id="js-project-prev" type="button" aria-label="Предыдущий проект">←</button>
+            <span class="projects__counter" id="js-project-counter">01 / 03</span>
+            <button class="projects__arrow" id="js-project-next" type="button" aria-label="Следующий проект">→</button>
+          </div>
+        </div>
+        <div class="projects__slider" id="js-project-slider">
+          <div id="js-project-list"></div>
+        </div>
+        <div class="projects__dots" id="js-project-dots" aria-label="Выбор проекта"></div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container">
+        <p class="section-label">04 / Контакты</p>
+        <h2 class="heading">Давайте<br><span class="heading__accent">общаться</span></h2>
+        <div class="contact__grid">
+          <div class="contact__links">
+            <a class="contact__link" href="mailto:uliskin06@mail.com"><span>Email</span>uliskin06@mail.com</a>
+            <a class="contact__link" href="tel:+79991234567"><span>Телефон</span>+7 999 1234567</a>
+            <a class="contact__link" href="https://github.com/tr1zet" target="_blank" rel="noopener"><span>GitHub</span>github.com/tr1zet</a>
+            <a class="contact__link" href="https://t.me/dan.ya42" target="_blank" rel="noopener"><span>Telegram</span>@dan.ya42</a>
+          </div>
+          <form class="contact__form" id="js-contact-form" novalidate>
+            <div class="contact__field">
+              <label class="contact__label" for="js-name">Имя</label>
+              <input class="contact__input" id="js-name" name="name" type="text" autocomplete="name">
+              <small class="contact__error" id="js-name-error"></small>
+            </div>
+            <div class="contact__field">
+              <label class="contact__label" for="js-email">Email</label>
+              <input class="contact__input" id="js-email" name="email" type="email" autocomplete="email">
+              <small class="contact__error" id="js-email-error"></small>
+            </div>
+            <div class="contact__field">
+              <label class="contact__label" for="js-message">Сообщение</label>
+              <textarea class="contact__input" id="js-message" name="message" rows="5"></textarea>
+              <small class="contact__error" id="js-message-error"></small>
+            </div>
+            <button class="button button--primary" id="js-form-submit" type="submit">Отправить сообщение</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© 2026 Даниил Улискин</span>
+      <span>Лабораторная работа №3 · Sass</span>
+    </div>
+  </footer>
+
+  <div class="modal" id="js-modal" role="dialog" aria-modal="true" aria-labelledby="js-modal-title">
+    <div class="modal__dialog">
+      <button class="modal__close" id="js-modal-close" type="button" aria-label="Закрыть">×</button>
+      <h2 class="modal__title" id="js-modal-title"></h2>
+      <p class="modal__text" id="js-modal-text"></p>
+    </div>
+  </div>
+
+  <div class="toast" id="js-toast" role="status" aria-live="polite">
+    <strong class="toast__title">Письмо отправлено</strong>
+    <span class="toast__text">Сообщение успешно обработано.</span>
+  </div>
+
+  <button class="back-top" id="js-back-top" type="button" aria-label="Наверх">↑</button>
+
+  <script src="js/jquery-3.6.1.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
